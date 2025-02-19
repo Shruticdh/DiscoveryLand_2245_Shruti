@@ -1,0 +1,674 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: messina-sans;
+    font-size: 2rem;
+    font-size: max(12px, min(22px, 2rem));
+    font-weight: 400;
+    letter-spacing: -.05em;
+    line-height: 1.35;
+}
+.disc-land-page{
+    margin:1rem 1rem 1rem 0rem;
+}
+.disc-gall-header {
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+
+}
+
+.disc-gall-header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    background: transparent;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.disc-gall-header-nav-links {
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.disc-gall-header-nav-links div {
+    position: relative;
+    display: inline-block;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+.disc-gall-header-nav-span {
+    /* position: absolute; */
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.disc-gall-header-nav-menu-option {
+    /* border: 1px solid white; */
+    margin-left: 3rem;
+    color: #ffffff;
+    border: #ffffff solid 0.1rem;
+    width:3rem;
+    height: 3rem;
+}
+
+.disc-gall-header-nav-menu-option p {
+    font-size: 2rem;
+    color: white;
+    padding: 0rem 1.75rem;
+    margin-top: 0.3rem;
+    margin-left: -0.7rem;
+}
+
+.disc-gall-header-nav-links div:hover span {
+    width: 100%;
+}
+
+.disc-gall-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+}
+
+.disc-gall-header.scrolled {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.disc-gall-header-nav-links div {
+    transition: color 0.3s ease;
+}
+
+
+/* main */
+.disc-land-main{
+    /* display: flex; */
+    width:100%; 
+    height: 100%;
+    background-color: #000000;
+    color:#ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    margin-top: 10rem;
+}
+.img {
+    margin-left:0.6rem;
+    width: 18rem;
+    height: 9rem;
+}
+.disc-land-main-row1,
+.disc-land-main-row2,
+.disc-land-main-row3,
+.disc-land-main-row4,
+.disc-land-main-row5,
+.disc-land-main-row6,
+.disc-land-main-row7,
+.disc-land-main-row8,
+.disc-land-main-row9{
+    display: flex;
+    gap:1rem; 
+}
+h2{
+    margin-top: 0rem;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+h3{
+    color: rgb(149, 148, 148);
+    margin-left: 1rem;
+    margin-top: -1rem;
+    font-size: 0.8rem;
+    font-weight: 90;
+}
+
+/* Footer */
+.disc-land-footer{
+    width:100%; 
+    height: 100%;
+    background-color: #000000;
+    color:#ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    margin-top: 7rem;
+}
+.disc-land-footer-logo{
+   margin-left: 1rem;
+}
+
+.disc-land-footerdown1{
+    margin-top: -5.5%;
+    margin-left: 30%;
+}
+
+.disc-land-footerdown2{
+    margin-top: -15.7%;
+    margin-left: 60%;
+}
+
+.disc-land-footerdown3{
+    margin-top: -12%;
+    margin-left: 80%;
+    
+}
+.disc-land-footerdown4{
+    margin-top: 5%;
+    display: flex;
+    gap: 62%;
+    margin-left: 1%;
+}
+.disc-land-footerdown1-1,
+.disc-land-footerdown1-4{
+    color: rgb(149, 148, 148);
+    font-weight: 80;
+    font-size: 1.2rem;
+}
+.disc-land-footerdown1-2,
+.disc-land-footerdown1-3,
+.disc-land-footerdown1-5{
+    font-weight: 500;
+    margin-top: -1rem;
+}
+.disc-land-footerdown1-3{
+    margin-top: -2rem;
+    text-decoration-line: underline;
+}
+.disc-land-footerdown1-5{
+    text-decoration-line: underline;
+}
+.disc-land-footerdown2-1,
+.disc-land-footerdown2-2,
+.disc-land-footerdown2-3,
+.disc-land-footerdown2-4{
+    font-weight: 500;
+    margin-top: -1.5rem;
+}
+.disc-land-footerdown3-1,
+.disc-land-footerdown3-2,
+.disc-land-footerdown3-3,
+.disc-land-footerdown3-4,
+.disc-land-footerdown3-5{
+    font-weight: 500;
+    margin-top: -1.5rem; 
+}
+.disc-land-footerdown4{
+    color: rgb(149, 148, 148);;
+}
+
+/* Default styles (for large screens like desktops/laptops) are already set in your existing CSS */
+
+/* For Laptops (1024px and below) */
+@media screen and (max-width: 1024px) {
+    .disc-land-header {
+        height: 8rem;
+    }
+    .disc-land-header-navsection-start {
+        margin-left: 20rem;
+    }
+    ul {
+        flex-wrap: wrap;
+        margin-left: 60vw;
+        gap: 1rem;
+        justify-content: center;
+        padding: 0;
+    }
+    .disc-land-page{
+        margin:1rem -2rem 1rem 0rem;
+    }
+    .img {
+        width: 34.5vw;
+        height: 20vw;
+    }
+    h2 {
+        font-size: 0.8rem;
+    }
+    h3 {
+        font-size: 0.7rem;
+    }
+
+    .disc-land-footer{
+        width:100%; 
+        height: 100%;
+        background-color: #000000;
+        color:#ffffff;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        margin-top: 7rem;
+    }
+    .disc-land-footer-logo{
+       margin-left: 1rem;
+    }
+    
+    .disc-land-footerdown1{
+        margin-top: -5.5%;
+        margin-left: 30%;
+    }
+    
+    .disc-land-footerdown2{
+        margin-top: -15.7%;
+        margin-left: 60%;
+    }
+    
+    .disc-land-footerdown3{
+        margin-top: -12%;
+        margin-left: 80%;
+        
+    }
+    .disc-land-footerdown4{
+        margin-top: 5%;
+        display: flex;
+        gap: 100%;
+        margin-left: 1%;
+    }
+    .disc-land-footerdown1-1,
+    .disc-land-footerdown1-4{
+        color: rgb(149, 148, 148);
+        font-weight: 80;
+        font-size: 1.2rem;
+    }
+    .disc-land-footerdown1-2,
+    .disc-land-footerdown1-3,
+    .disc-land-footerdown1-5{
+        font-weight: 500;
+        margin-top: -1rem;
+    }
+    .disc-land-footerdown1-3{
+        margin-top: -2rem;
+        text-decoration-line: underline;
+    }
+    .disc-land-footerdown1-5{
+        text-decoration-line: underline;
+    }
+    .disc-land-footerdown2-1,
+    .disc-land-footerdown2-2,
+    .disc-land-footerdown2-3,
+    .disc-land-footerdown2-4{
+        font-weight: 500;
+        margin-top: -1.5rem;
+    }
+    .disc-land-footerdown3-1,
+    .disc-land-footerdown3-2,
+    .disc-land-footerdown3-3,
+    .disc-land-footerdown3-4,
+    .disc-land-footerdown3-5{
+        font-weight: 500;
+        margin-top: -1.5rem; 
+    }
+    .disc-land-footerdown4{
+        color: rgb(149, 148, 148);;
+    }
+    
+}
+
+
+/* For Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    .disc-land-header {
+        width:100%;
+        height: 7rem;
+        justify-content: center;
+    }
+    .discoverylogo{
+        width: 20%;
+        height: 20%;
+        margin-left: 6vw;
+    }
+    .disc-land-header-navsection-start {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+    ul {
+        flex-wrap: wrap;
+        margin-left: 20vw;
+        gap: 1rem;
+        justify-content: center;
+        padding: 0;
+    }
+    li {
+        font-size: 0.8rem;
+    }
+    button {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .disc-land-page{
+        margin:1rem 1rem 1rem 0rem;
+    }
+    
+    .disc-land-main-row1,
+    .disc-land-main-row2,
+    .disc-land-main-row3,
+    .disc-land-main-row4,
+    .disc-land-main-row5,
+    .disc-land-main-row6,
+    .disc-land-main-row7,
+    .disc-land-main-row8,
+    .disc-land-main-row9 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .img {
+        width: 40vw;
+        height: 10rem;
+    }
+    h2 {
+        font-size: 0.75rem;
+    }
+    h3 {
+        font-size: 0.6rem;
+    }
+    .disc-land-footerdown1{
+        margin-left: 6rem;
+    }
+    .disc-land-footerdown1-1,
+    .disc-land-footerdown1-4{
+        color: rgb(149, 148, 148);
+        font-weight: 80;
+        font-size: 1.2rem;
+    }
+    .disc-land-footerdown1-2,
+    .disc-land-footerdown1-3,
+    .disc-land-footerdown1-5{
+        font-weight: 500;
+        margin-top: -1rem;
+    }
+    .disc-land-footerdown1-3{
+        margin-top: -2rem;
+        text-decoration-line: underline;
+    }
+    .disc-land-footerdown1-5{
+        text-decoration-line: underline;
+    }
+    .disc-land-footerdown2{
+        margin-top: -13rem;
+    }
+    .disc-land-footerdown2-1,
+    .disc-land-footerdown2-2,
+    .disc-land-footerdown2-3,
+    .disc-land-footerdown2-4{
+        font-weight: 500;
+        margin-top: -1.2em;
+    }
+    .disc-land-footerdown3{
+        margin-top: -9rem;
+    }
+    .disc-land-footerdown3-1,
+    .disc-land-footerdown3-2,
+    .disc-land-footerdown3-3,
+    .disc-land-footerdown3-4,
+    .disc-land-footerdown3-5{
+        font-weight: 500;
+        margin-top: -1.5rem; 
+    }
+    .disc-land-footerdown4{
+        color: rgb(149, 148, 148);;
+    }
+
+    .disc-gall-header {
+        width: 100%;
+        z-index: 100;
+        position: fixed;
+        top: 0;
+    
+    }
+    
+    .disc-gall-header-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 2rem;
+        background: transparent;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .disc-gall-header-nav-links {
+        font-size: 1rem;
+        font-weight: 500;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1rem;
+        color: #fff;
+        transition: color 0.3s ease-in-out;
+    }
+    .disc-gall-header-nav-white-logo{
+        width:100%;
+        height:100%;
+        margin-top: 10rem;
+        margin-left: 1rem;
+    }
+    
+    .disc-gall-header-nav-links div {
+        position: relative;
+        display: inline-block;
+        padding: 3px 10px;
+        cursor: pointer;
+        margin-left: -1rem;
+    }
+    
+    .disc-gall-header-nav-span {
+        /* position: absolute; */
+        display: block;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: white;
+        transition: width 0.3s ease-in-out;
+    }
+    
+    .disc-gall-header-nav-menu-option {
+        /* border: 1px solid white; */
+        margin-left: 3rem;
+        color: #ffffff;
+        border: #ffffff solid 0.1rem;
+        width:3rem;
+        height: 3rem;
+    }
+    
+    .disc-gall-header-nav-menu-option p {
+        font-size: 2rem;
+        color: white;
+        padding: 0rem 1.75rem;
+        margin-top: 0.3rem;
+        margin-left: -0.7rem;
+    }
+    
+    .disc-gall-header-nav-links div:hover span {
+        width: 100%;
+    }
+    
+    .disc-gall-header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        z-index: 1000;
+    }
+    
+    .disc-gall-header.scrolled {
+        background-color: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .disc-gall-header-nav-links div {
+        transition: color 0.3s ease;
+    }
+    
+
+}
+
+/* For Mobile Phones (480px and below) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 1rem;
+        letter-spacing: normal;
+    }
+    .disc-land-header {
+        height: 3rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .disc-land-header-light-logo {
+        margin-left: 10vw;
+        margin-top: -0vw;
+        width: 40vw;
+        height: 40vw;
+        text-align: center;
+    }
+    .discoverylogo {
+        width: 60%;
+        margin-left: 4rem;
+    }
+    .disc-land-header-navsection-start {
+        display: none; /* Hide menu on mobile */
+    }
+    .disc-land-main {
+        text-align: center;
+    }
+    .disc-land-page{
+        margin:1rem 1rem 1rem 1vw;
+    }
+    .disc-land-main-row1,
+    .disc-land-main-row2,
+    .disc-land-main-row3,
+    .disc-land-main-row4,
+    .disc-land-main-row5,
+    .disc-land-main-row6,
+    .disc-land-main-row7,
+    .disc-land-main-row8,
+    .disc-land-main-row9 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .img {
+        width: 15rem;
+        height: 10rem;
+    }
+    h2 {
+        font-size: 0.7rem;
+    }
+    h3 {
+        font-size: 0.6rem;
+    }
+    .disc-land-footer {
+        text-align: center;
+    }
+    .disc-gall-header {
+        width: 100%;
+        z-index: 100;
+        position: fixed;
+        top: 0;
+    
+    }
+    
+    .disc-gall-header-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* padding: 1rem 1rem; */
+        padding: 0rem 9rem 0rem 9rem;
+        height: 0rem;
+        background: transparent;
+    }
+    .disc-gall-header-nav-white-logo{
+        margin-top: 4rem;
+        margin-left: -4rem;
+    }
+    
+    .disc-gall-header-nav-links {
+        font-size: 1.1rem;
+        font-weight: 500;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1rem;
+        /* color: #fff;
+        transition: color 0.3s ease-in-out; */
+        margin-left: 1000rem;
+    }
+    
+    .disc-gall-header-nav-links div {
+        position: relative;
+        display: inline-block;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+    
+    .disc-gall-header-nav-span {
+        /* position: absolute; */
+        display: block;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: white;
+        transition: width 0.3s ease-in-out;
+    }
+    
+    .disc-gall-header-nav-menu-option {
+        border: 1px solid white;
+        margin-left: 3rem;
+    }
+    
+    .disc-gall-header-nav-menu-option p {
+        font-size: 2rem;
+        color: white;
+        padding: 0rem .75rem;
+    }
+    
+    .disc-gall-header-nav-links div:hover span {
+        width: 100%;
+    } 
+   
+    .disc-gall-header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        z-index: 1000;
+    } 
+    
+    .disc-gall-header.scrolled {
+        background-color: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .disc-gall-header-nav-links div {
+        transition: color 0.3s ease;
+    }
+    
+}
